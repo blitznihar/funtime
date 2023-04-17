@@ -1,0 +1,6 @@
+mode: set
+ccusecase/main.go:7.13,9.2 1 0
+ccusecase/main.go:20.102,24.2 2 0
+ccusecase/main.go:30.122,33.2 1 0
+ccusecase/main.go:39.87,43.2 2 0
+ccusecase/main.go:54.51,58.2 2 0
