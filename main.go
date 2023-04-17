@@ -47,7 +47,7 @@ func DownloadFile(bucketName string, objectKey string, fileName string) error {
 
 	awsSession, err := session.NewSession(&aws.Config{
 		Region:      aws.String("us-east-2"),
-		Credentials: credentials.NewStaticCredentials("AKIASS3CL3LCQWIAU55D", "1vai8n4KLxVd8zPDwsAaILEDKy3Kppfy+yTH2AZo", ""),
+		Credentials: credentials.NewStaticCredentials("", "", ""),
 	})
 
 	s3Client := s3.New(awsSession)
@@ -81,7 +81,7 @@ func UploadFile(bucketName string, fileName string, body [][]string) error {
 	myReader := strings.NewReader(bodyToUpload)
 	awsSession, err := session.NewSession(&aws.Config{
 		Region:      aws.String("us-east-2"),
-		Credentials: credentials.NewStaticCredentials("AKIASS3CL3LCQWIAU55D", "1vai8n4KLxVd8zPDwsAaILEDKy3Kppfy+yTH2AZo", ""),
+		Credentials: credentials.NewStaticCredentials("", "", ""),
 	})
 
 	uploader := s3manager.NewUploader(awsSession)
