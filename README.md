@@ -1,0 +1,3 @@
+# funtime
+
+Go Sample Stubs
